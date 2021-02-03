@@ -24,6 +24,12 @@
 		5852D64425BD57AC00AD201D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D64225BD57AC00AD201D /* Extensions.swift */; };
 		5852D64825BD5AE000AD201D /* SVGVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D64725BD5AE000AD201D /* SVGVersion.swift */; };
 		5852D64925BD5AE000AD201D /* SVGVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D64725BD5AE000AD201D /* SVGVersion.swift */; };
+		5853928725C736F100D0C9AE /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853928625C736F100D0C9AE /* TestResults.swift */; };
+		5853928825C736F100D0C9AE /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853928625C736F100D0C9AE /* TestResults.swift */; };
+		58BAE4C825C88A41001D4B8D /* TestResults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58BAE4C725C88A41001D4B8D /* TestResults.plist */; };
+		58BAE4C925C88A41001D4B8D /* TestResults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58BAE4C725C88A41001D4B8D /* TestResults.plist */; };
+		58BAE4DE25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BAE4DD25C9CAAE001D4B8D /* MacawSVGView.swift */; };
+		58BAE4DF25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BAE4DD25C9CAAE001D4B8D /* MacawSVGView.swift */; };
 		8FEE50508F87A45647903740 /* Pods_SVGViewTests__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16A92707A12E5683FEE5514 /* Pods_SVGViewTests__macOS_.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +49,9 @@
 		5852D63D25BD567300AD201D /* TestSuite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSuite.swift; sourceTree = "<group>"; };
 		5852D64225BD57AC00AD201D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5852D64725BD5AE000AD201D /* SVGVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGVersion.swift; sourceTree = "<group>"; };
+		5853928625C736F100D0C9AE /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
+		58BAE4C725C88A41001D4B8D /* TestResults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestResults.plist; sourceTree = "<group>"; };
+		58BAE4DD25C9CAAE001D4B8D /* MacawSVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacawSVGView.swift; sourceTree = "<group>"; };
 		7AE497394B71176587920E0A /* Pods-SVGViewTests (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGViewTests (macOS).release.xcconfig"; path = "Target Support Files/Pods-SVGViewTests (macOS)/Pods-SVGViewTests (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		7D98220EFF673C1CB8EB5B7F /* Pods_SVGViewTests__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVGViewTests__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16A92707A12E5683FEE5514 /* Pods_SVGViewTests__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SVGViewTests__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +101,9 @@
 				5852D63D25BD567300AD201D /* TestSuite.swift */,
 				5852D64225BD57AC00AD201D /* Extensions.swift */,
 				5852D64725BD5AE000AD201D /* SVGVersion.swift */,
+				5853928625C736F100D0C9AE /* TestResults.swift */,
+				58BAE4C725C88A41001D4B8D /* TestResults.plist */,
+				58BAE4DD25C9CAAE001D4B8D /* MacawSVGView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -224,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BAE4C825C88A41001D4B8D /* TestResults.plist in Resources */,
 				5852D61025BC8DD800AD201D /* w3c in Resources */,
 				58152BFC25BC490900E8D23A /* Assets.xcassets in Resources */,
 			);
@@ -233,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BAE4C925C88A41001D4B8D /* TestResults.plist in Resources */,
 				5852D61125BC8DD800AD201D /* w3c in Resources */,
 				58152BFD25BC490900E8D23A /* Assets.xcassets in Resources */,
 			);
@@ -331,6 +345,8 @@
 				58152BFA25BC490900E8D23A /* ContentView.swift in Sources */,
 				5852D64825BD5AE000AD201D /* SVGVersion.swift in Sources */,
 				58152BF825BC490900E8D23A /* SVGViewTestsApp.swift in Sources */,
+				58BAE4DE25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */,
+				5853928725C736F100D0C9AE /* TestResults.swift in Sources */,
 				5852D63925BD562700AD201D /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +360,8 @@
 				58152BFB25BC490900E8D23A /* ContentView.swift in Sources */,
 				5852D64925BD5AE000AD201D /* SVGVersion.swift in Sources */,
 				58152BF925BC490900E8D23A /* SVGViewTestsApp.swift in Sources */,
+				58BAE4DF25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */,
+				5853928825C736F100D0C9AE /* TestResults.swift in Sources */,
 				5852D63A25BD562700AD201D /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,7 +534,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FZXCM5CJ7P;
@@ -542,7 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = FZXCM5CJ7P;

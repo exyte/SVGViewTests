@@ -18,7 +18,8 @@ class TestCase: Hashable {
                     let fileAttributes = try fileURL.resourceValues(forKeys:[.isRegularFileKey])
                     if fileAttributes.isRegularFile! && fileURL.pathExtension == "svg" {
                         let name = fileURL.deletingPathExtension().lastPathComponent
-                        tests.append(TestCase(url: root, name: name))
+                        let passed = TestResults.isPassed(test: name, version: version)
+                        tests.append(TestCase(url: root, name: name, passed: passed))
                     }
                 } catch { print(error, fileURL) }
             }
@@ -32,10 +33,12 @@ class TestCase: Hashable {
 
     let url: URL
     let name: String
+    let passed: Bool
 
-    init(url: URL, name: String) {
+    init(url: URL, name: String, passed: Bool) {
         self.url = url
         self.name = name
+        self.passed = passed
     }
 
     var svgURL: URL {

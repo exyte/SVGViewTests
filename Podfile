@@ -3,6 +3,7 @@ use_frameworks!
 
 def pods
   pod 'SVGView', :path => '../SVGView/'
+  pod 'Macaw'
 end
 
 target 'SVGViewTests (iOS)' do

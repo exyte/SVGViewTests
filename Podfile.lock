@@ -1,16 +1,27 @@
 PODS:
+  - Macaw (0.9.7):
+    - SWXMLHash
   - SVGView (0.0.1)
+  - SWXMLHash (5.0.1)
 
 DEPENDENCIES:
+  - Macaw
   - SVGView (from `../SVGView/`)
+
+SPEC REPOS:
+  trunk:
+    - Macaw
+    - SWXMLHash
 
 EXTERNAL SOURCES:
   SVGView:
     :path: "../SVGView/"
 
 SPEC CHECKSUMS:
+  Macaw: 4a931baf9a9826b06d0d8ecf300014c962ab9d50
   SVGView: 90e79bd9ce6d36416b1149180725b41a54e51a86
+  SWXMLHash: 9cc0c2e4807926c74377724aa8722ee5707a0485
 
-PODFILE CHECKSUM: b0336f199aa6629c9671c0e4ed35f79b6430a361
+PODFILE CHECKSUM: 2f481efa943e07d42fad82242ec9b4b944743f16
 
 COCOAPODS: 1.10.1

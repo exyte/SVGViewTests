@@ -34,6 +34,10 @@ class TestSuite: Hashable {
     let name: String
     var items = [TestCase]()
 
+    var passed: Int {
+        items.filter { $0.passed }.count
+    }
+
     init(name: String, items: [TestCase]) {
         self.name = name
         self.items = items
