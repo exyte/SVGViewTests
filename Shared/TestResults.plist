@@ -4,6 +4,9 @@
 <dict>
 	<key>1.1F2</key>
 	<array>
+		<string>painting-fill-03-t</string>
+		<string>painting-fill-02-t</string>
+		<string>painting-control-02-f</string>
 		<string>color-prop-01-b</string>
 		<string>masking-opacity-01-b</string>
 		<string>pservers-grad-07-b</string>
