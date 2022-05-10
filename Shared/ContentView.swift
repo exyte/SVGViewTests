@@ -64,6 +64,14 @@ struct TestSuitView: View {
     }
 }
 
+#if os(iOS)
+enum CompareViewType: Int {
+    case web
+    case macaw
+    case image
+}
+#endif
+
 struct TestCaseView: View {
 
     let test: TestCase
@@ -71,43 +79,111 @@ struct TestCaseView: View {
     @State var location: CGPoint?
 
     var body: some View {
-        GeometryReader { geometry in
-            let rect = geometry.frame(in: .global)
-            let size = rect.size
-            let svgAndImage = VStack(spacing: 0) {
-                Text("SVGView").font(.title)
-                SVGView(fileURL: test.svgURL).gesture(DragGesture().onChanged { value in
-                    self.location = CGPoint(x: value.location.x, y: value.location.y)
-                })
-                Text("Image").font(.title)
-                Image.of(pngURL: test.pngURL)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit).gesture(DragGesture().onChanged { value in
-                        self.location = CGPoint(x: value.location.x, y: value.location.y)
-                    })
+        content
+            .background(Color.white)
+            .navigationTitle(test.name)
+    }
+
+#if os(OSX)
+    var content: some View {
+        HStack {
+            VStack {
+                svgView
+                webView
             }
-            ZStack {
-            #if os(OSX)
-                HStack(spacing: 0) {
-                    svgAndImage
-                    VStack(spacing: 0) {
-                        Text("Macaw").font(.title)
-                        MacawSVGView(fileURL: test.svgURL)
-                        Text("WebKit").font(.title)
-                        Rectangle().fill(Color.clear)
-                    }
+            VStack {
+                macaw
+                image
+            }
+        }
+    }
+#else
+
+    @State var compareViewType: CompareViewType = .web
+
+    var content: some View {
+        GeometryReader { geometry in
+            if geometry.size.height >= geometry.size.width {
+                VStack {
+                    svgView
+                    compareView
                 }
-            #else
-                svgAndImage
-            #endif
-                if let p = location {
-                    marker(pos: p)
-                    marker(pos: CGPoint(x: p.x, y: p.y + size.height / 2))
+            } else {
+                HStack {
+                    svgView
+                    compareView
                 }
             }
         }
-        .background(Color.white)
-        .navigationTitle(test.name)
+    }
+
+    var compareView: some View {
+        ZStack {
+            switch compareViewType {
+            case .web:
+                webView
+            case .macaw:
+                macaw
+            case .image:
+                image
+            }
+        }
+        .onTapGesture(count: 2) {
+            switch compareViewType {
+            case .web:
+                compareViewType = .macaw
+            case .macaw:
+                compareViewType = .image
+            case .image:
+                compareViewType = .web
+            }
+        }
+    }
+#endif
+
+    var svgView: some View {
+        SVGView(fileURL: test.svgURL)
+            .modifier(Viewer(title: "SVGView", location: $location))
+    }
+
+    var webView: some View {
+        WebView(svgUrl: test.svgURL)
+            .modifier(Viewer(title: "WebKit", location: $location))
+    }
+
+    var macaw: some View {
+        MacawSVGView(fileURL: test.svgURL)
+            .modifier(Viewer(title: "Macaw", location: $location))
+    }
+
+    var image: some View {
+        Image.from(url: test.pngURL)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .modifier(Viewer(title: "Image", location: $location))
+    }
+
+}
+
+private struct Viewer: ViewModifier {
+    let title: String
+    @Binding var location: CGPoint?
+    func body(content: Content) -> some View {
+        VStack(alignment: .center) {
+            Text(title).font(.title)
+            ZStack {
+                content
+                Rectangle()
+                    .fill(Color.white.opacity(0.001))
+                if let location = location {
+                    marker(pos: location)
+                }
+            }
+            .gesture(DragGesture().onChanged { value in
+                self.location = CGPoint(x: value.location.x, y: value.location.y)
+            })
+        }
     }
 
     func marker(pos: CGPoint) -> some View {

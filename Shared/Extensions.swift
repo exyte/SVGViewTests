@@ -20,8 +20,8 @@ extension View {
 
 extension Image {
 
-    static func of(pngURL: URL) -> Image {
-        if let img = NSImage(contentsOf: pngURL) {
+    static func from(url: URL) -> Image {
+        if let img = NSImage(contentsOf: url) {
             return Image(nsImage: img)
         }
         return Image(systemName: "xmark.octagon")
@@ -39,8 +39,8 @@ extension View {
 }
 
 extension Image {
-    static func of(pngURL: URL) -> Image {
-        if let data = try? Data(contentsOf: pngURL) {
+    static func from(url: URL) -> Image {
+        if let data = try? Data(contentsOf: url) {
             if let img = UIImage(data: data) {
                 return Image(uiImage: img)
             }

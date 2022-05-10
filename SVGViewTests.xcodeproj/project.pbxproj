@@ -26,6 +26,8 @@
 		5852D64925BD5AE000AD201D /* SVGVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5852D64725BD5AE000AD201D /* SVGVersion.swift */; };
 		5853928725C736F100D0C9AE /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853928625C736F100D0C9AE /* TestResults.swift */; };
 		5853928825C736F100D0C9AE /* TestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5853928625C736F100D0C9AE /* TestResults.swift */; };
+		585FA88D280324420086C341 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585FA88C280324420086C341 /* WebView.swift */; };
+		585FA88E280324420086C341 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585FA88C280324420086C341 /* WebView.swift */; };
 		58BAE4C825C88A41001D4B8D /* TestResults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58BAE4C725C88A41001D4B8D /* TestResults.plist */; };
 		58BAE4C925C88A41001D4B8D /* TestResults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58BAE4C725C88A41001D4B8D /* TestResults.plist */; };
 		58BAE4DE25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BAE4DD25C9CAAE001D4B8D /* MacawSVGView.swift */; };
@@ -50,6 +52,7 @@
 		5852D64225BD57AC00AD201D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5852D64725BD5AE000AD201D /* SVGVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGVersion.swift; sourceTree = "<group>"; };
 		5853928625C736F100D0C9AE /* TestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResults.swift; sourceTree = "<group>"; };
+		585FA88C280324420086C341 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		58BAE4C725C88A41001D4B8D /* TestResults.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestResults.plist; sourceTree = "<group>"; };
 		58BAE4DD25C9CAAE001D4B8D /* MacawSVGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacawSVGView.swift; sourceTree = "<group>"; };
 		7AE497394B71176587920E0A /* Pods-SVGViewTests (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGViewTests (macOS).release.xcconfig"; path = "Target Support Files/Pods-SVGViewTests (macOS)/Pods-SVGViewTests (macOS).release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		58152BE425BC490800E8D23A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				585FA88C280324420086C341 /* WebView.swift */,
 				58152BE525BC490800E8D23A /* SVGViewTestsApp.swift */,
 				58152BE625BC490800E8D23A /* ContentView.swift */,
 				58152BE725BC490900E8D23A /* Assets.xcassets */,
@@ -346,6 +350,7 @@
 				5852D64825BD5AE000AD201D /* SVGVersion.swift in Sources */,
 				58152BF825BC490900E8D23A /* SVGViewTestsApp.swift in Sources */,
 				58BAE4DE25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */,
+				585FA88D280324420086C341 /* WebView.swift in Sources */,
 				5853928725C736F100D0C9AE /* TestResults.swift in Sources */,
 				5852D63925BD562700AD201D /* TestCase.swift in Sources */,
 			);
@@ -361,6 +366,7 @@
 				5852D64925BD5AE000AD201D /* SVGVersion.swift in Sources */,
 				58152BF925BC490900E8D23A /* SVGViewTestsApp.swift in Sources */,
 				58BAE4DF25C9CAAE001D4B8D /* MacawSVGView.swift in Sources */,
+				585FA88E280324420086C341 /* WebView.swift in Sources */,
 				5853928825C736F100D0C9AE /* TestResults.swift in Sources */,
 				5852D63A25BD562700AD201D /* TestCase.swift in Sources */,
 			);
