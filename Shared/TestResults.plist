@@ -4,6 +4,11 @@
 <dict>
 	<key>1.1F2</key>
 	<array>
+		<string>color-prop-01-b</string>
+		<string>color-prop-02-f</string>
+		<string>color-prop-03-t</string>
+		<string>color-prop-04-t</string>
+		<string>color-prop-05-t</string>
 		<string>styling-pres-01-t</string>
 		<string>styling-css-01-b</string>
 		<string>styling-class-01-f</string>
@@ -14,14 +19,11 @@
 		<string>painting-fill-03-t</string>
 		<string>painting-fill-02-t</string>
 		<string>painting-control-02-f</string>
-		<string>color-prop-01-b</string>
 		<string>masking-opacity-01-b</string>
 		<string>pservers-grad-07-b</string>
 		<string>pservers-grad-02-b</string>
 		<string>pservers-grad-04-b</string>
 		<string>pservers-grad-01-b</string>
-		<string>color-prop-02-f</string>
-		<string>color-prop-03-t</string>
 		<string>coords-coord-01-t</string>
 		<string>coords-trans-01-b</string>
 		<string>coords-trans-02-t</string>

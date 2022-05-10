@@ -58,9 +58,10 @@ struct TestSuitView: View {
     }
 
     func getHeader() -> some View {
-        Text("\(suit.name) (\(suit.passed)/\(suit.items.count))").foregroundColor(.blue).font(.headline).onTapGesture {
-            expanded = !expanded
-        }
+        Text("\(suit.name) (\(suit.passed)/\(suit.items.count))")
+            .foregroundColor(.blue)
+            .font(.headline)
+            .onTapGesture { expanded = !expanded }
     }
 }
 
