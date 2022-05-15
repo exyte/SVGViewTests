@@ -9,6 +9,27 @@
 		<string>color-prop-03-t</string>
 		<string>color-prop-04-t</string>
 		<string>color-prop-05-t</string>
+		<string>coords-coord-01-t</string>
+		<string>coords-coord-02-t</string>
+		<string>coords-trans-01-b</string>
+		<string>coords-trans-02-t</string>
+		<string>coords-trans-03-t</string>
+		<string>coords-trans-04-t</string>
+		<string>coords-trans-05-t</string>
+		<string>coords-trans-06-t</string>
+		<string>coords-trans-07-t</string>
+		<string>coords-trans-08-t</string>
+		<string>coords-trans-09-t</string>
+		<string>coords-trans-10-f</string>
+		<string>coords-trans-11-f</string>
+		<string>coords-trans-12-f</string>
+		<string>coords-trans-13-f</string>
+		<string>coords-trans-14-f</string>
+		<string>coords-transformattr-01-f</string>
+		<string>coords-transformattr-02-f</string>
+		<string>coords-transformattr-03-f</string>
+		<string>coords-transformattr-04-f</string>
+		<string>coords-transformattr-05-f</string>
 		<string>styling-pres-01-t</string>
 		<string>styling-css-01-b</string>
 		<string>styling-class-01-f</string>
@@ -24,21 +45,6 @@
 		<string>pservers-grad-02-b</string>
 		<string>pservers-grad-04-b</string>
 		<string>pservers-grad-01-b</string>
-		<string>coords-coord-01-t</string>
-		<string>coords-trans-01-b</string>
-		<string>coords-trans-02-t</string>
-		<string>coords-trans-03-t</string>
-		<string>coords-trans-04-t</string>
-		<string>coords-trans-05-t</string>
-		<string>coords-trans-06-t</string>
-		<string>coords-trans-07-t</string>
-		<string>coords-trans-08-t</string>
-		<string>coords-trans-09-t</string>
-		<string>coords-transformattr-01-f</string>
-		<string>coords-transformattr-02-f</string>
-		<string>coords-transformattr-03-f</string>
-		<string>coords-transformattr-04-f</string>
-		<string>coords-transformattr-05-f</string>
 		<string>painting-control-03-f</string>
 		<string>painting-fill-01-t</string>
 		<string>painting-fill-04-t</string>
