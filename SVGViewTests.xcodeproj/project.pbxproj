@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2303E92840BF8AEAEBA64D04 /* Pods_SVGViewTests__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D98220EFF673C1CB8EB5B7F /* Pods_SVGViewTests__iOS_.framework */; };
+		44F37B572859A671005A4FC4 /* Blocky.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44F37B562859A671005A4FC4 /* Blocky.ttf */; };
+		44F37B582859A671005A4FC4 /* Blocky.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44F37B562859A671005A4FC4 /* Blocky.ttf */; };
 		58152BF825BC490900E8D23A /* SVGViewTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58152BE525BC490800E8D23A /* SVGViewTestsApp.swift */; };
 		58152BF925BC490900E8D23A /* SVGViewTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58152BE525BC490800E8D23A /* SVGViewTestsApp.swift */; };
 		58152BFA25BC490900E8D23A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58152BE625BC490800E8D23A /* ContentView.swift */; };
@@ -37,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		19F1B49FAB4BA9E5BB904BFB /* Pods-SVGViewTests (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGViewTests (iOS).release.xcconfig"; path = "Target Support Files/Pods-SVGViewTests (iOS)/Pods-SVGViewTests (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		44F37B562859A671005A4FC4 /* Blocky.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blocky.ttf; sourceTree = "<group>"; };
 		54C348182D1FEA665A2E627F /* Pods-SVGViewTests (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SVGViewTests (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SVGViewTests (iOS)/Pods-SVGViewTests (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		58152BE525BC490800E8D23A /* SVGViewTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGViewTestsApp.swift; sourceTree = "<group>"; };
 		58152BE625BC490800E8D23A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 				58152BE725BC490900E8D23A /* Assets.xcassets */,
 				5852D63825BD562700AD201D /* TestCase.swift */,
 				5852D63D25BD567300AD201D /* TestSuite.swift */,
+				44F37B562859A671005A4FC4 /* Blocky.ttf */,
 				5852D64225BD57AC00AD201D /* Extensions.swift */,
 				5852D64725BD5AE000AD201D /* SVGVersion.swift */,
 				5853928625C736F100D0C9AE /* TestResults.swift */,
@@ -242,6 +246,7 @@
 			files = (
 				58BAE4C825C88A41001D4B8D /* TestResults.plist in Resources */,
 				5852D61025BC8DD800AD201D /* w3c in Resources */,
+				44F37B572859A671005A4FC4 /* Blocky.ttf in Resources */,
 				58152BFC25BC490900E8D23A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +257,7 @@
 			files = (
 				58BAE4C925C88A41001D4B8D /* TestResults.plist in Resources */,
 				5852D61125BC8DD800AD201D /* w3c in Resources */,
+				44F37B582859A671005A4FC4 /* Blocky.ttf in Resources */,
 				58152BFD25BC490900E8D23A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
